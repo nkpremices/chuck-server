@@ -1,0 +1,31 @@
+{
+  "name": "sov-test-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkpremices/sov-test-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkpremices/sov-test-server/issues"
+  },
+  "homepage": "https://github.com/nkpremices/sov-test-server#readme",
+  "dependencies": {
+    "@apollo/datasource-rest": "^5.0.2",
+    "@apollo/server": "^4.5.0",
+    "graphql": "^16.6.0",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^1.0.1",
+    "prettier": "^2.8.7",
+    "ts-node-dev": "^2.0.0"
+  }
+}
