@@ -10,7 +10,11 @@ export class ChuckNorrisAPI extends RESTDataSource {
     return this.get('categories');
   }
 
-  async getRandomJoke(category: string) {
+  async getRandomJokeByCategory(category: string) {
     return this.get(`random?category=${category}`);
+  }
+
+  async getRandomJoke() {
+    return this.get('random');
   }
 }

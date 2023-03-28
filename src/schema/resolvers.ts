@@ -12,15 +12,32 @@ export const resolvers = {
       __: Record<any, any>,
       { dataSources }: { dataSources: DataSources }
     ) => {
-      const categories = await dataSources.chuckNorrisAPI.getCategories();
-      return categories;
+      return await dataSources.chuckNorrisAPI.getCategories();
     },
-    randomJoke: async (
+
+    randomJokeByCategory: async (
       _: Record<any, any>,
       { category }: { category: string },
       { dataSources }: { dataSources: DataSources }
     ) => {
-      const joke = await dataSources.chuckNorrisAPI.getRandomJoke(category);
+      const joke = await dataSources.chuckNorrisAPI.getRandomJokeByCategory(
+        category
+      );
+
+      return {
+        id: joke.id,
+        value: joke.value,
+        iconUrl: joke.icon_url,
+        url: joke.url,
+      } as Joke;
+    },
+
+    randomJoke: async (
+      _: Record<any, any>,
+      {}: Record<any, any>,
+      { dataSources }: { dataSources: DataSources }
+    ) => {
+      const joke = await dataSources.chuckNorrisAPI.getRandomJoke();
 
       return {
         id: joke.id,

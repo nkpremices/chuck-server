@@ -4,7 +4,6 @@
     "outDir": "dist",
     "esModuleInterop": true,
     "lib": ["ES2018", "dom"],
-    "suppressImplicitAnyIndexErrors": true,
     "strict": true
     // TODO: get rid of skipLibCheck once nexus-prisma fixes 1-n relations
     // "skipLibCheck": true
