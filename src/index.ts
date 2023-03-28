@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { typeDefs } from './schema/typeDefs';
 import { resolvers } from './schema/resolvers';
 import { ApolloServer } from '@apollo/server';
@@ -10,7 +11,7 @@ const server = new ApolloServer({
 });
 
 startStandaloneServer(server as unknown as ApolloServer, {
-  listen: { port: 4000, path: 'graphql' },
+  listen: { port: (process.env.PORT || 4000) as number, path: 'graphql' },
   context: async () => {
     return {
       dataSources: {
