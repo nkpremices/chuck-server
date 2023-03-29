@@ -32,3 +32,9 @@
 
 * After installation run ```yarn  test``` 
 
+## Other Links
+
+* The ui repo can be found [here](https://github.com/nkpremices/sov-test-ui)
+* The server is deployed live at this link [here](https://chuck-norris-jokes-funb.onrender.com)
+* The client is deployed live at this link [here](https://chuck-ui.netlify.app/)
+
