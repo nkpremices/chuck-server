@@ -9,7 +9,7 @@
     "lint": "npx tsc --noEmit && eslint .",
     "lint:fix": "npx tsc --noEmit && eslint --fix . && prettier --write .",
     "pre-commit": "lint-staged",
-    "start": "yarn tsc && node dist/index.js"
+    "start": "yarn tsc && node ./dist/index.js"
   },
   "repository": {
     "type": "git",
