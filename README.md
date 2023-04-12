@@ -1,4 +1,4 @@
-# SovTech Fullstack Engineer Test (Chuck) - Server
+# Chuck - Server
 
 ## Project development steps/requirements
 
