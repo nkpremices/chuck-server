@@ -1,13 +1,9 @@
 # Chuck - Server
 
-## Project development steps/requirements
-
-### Steps(Requirements)
+### Stack
 * TypeScript
 * Apollo Server
 * NodeJS (LTS)
-* Solution should be checked into a public Github repo. Additionally the README should outline all necessary steps required to bootstrap the code
-* Solution can be implemented in CodeSandbox or similar
 
 ## Getting started
 
@@ -34,7 +30,7 @@
 
 ## Other Links
 
-* The ui repo can be found [here](https://github.com/nkpremices/sov-test-ui)
+* The ui repo can be found [here](https://github.com/nkpremices/chuck-ui)
 * The server is deployed live at this link [here](https://chuck-norris-jokes-funb.onrender.com)
 * The client is deployed live at this link [here](https://chuck-ui.netlify.app/)
 
